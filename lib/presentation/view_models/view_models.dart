@@ -28,8 +28,13 @@ class TaskViewModel extends ChangeNotifier {
     return SizeTransition(
       sizeFactor: animation,
       child: Card(
+        elevation: 10,
+        shadowColor: EColors.lime,
         child: ListTile(
-          title: Text(task.title),
+          title: Text(
+            task.title,
+            style: style,
+          ),
           subtitle: Text(task.description),
         ),
       ),

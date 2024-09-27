@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'presentation/view_models/view_models.dart';
-import 'presentation/views/home/home_view.dart';
+import 'core/exports_file/export.dart';
 
 void main() {
   runApp(
@@ -20,9 +17,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Animation MVVM App',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: HomeScreen(),
+      home: const HomeScreen(),
       // home: const AnimatedListScreen(),
     );
   }
